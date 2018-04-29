@@ -1,0 +1,9 @@
+{
+  "name": "yourmarketplace-react-app",
+  "version": "1.0.0",
+  "description": "Your Market Place Sales Report",
+  "main": "index.js",
+  "repository": "https://github.com/dsendri/yourmarketplace-react-app.git",
+  "author": "Darwin Sanjaya",
+  "license": "MIT"
+}
