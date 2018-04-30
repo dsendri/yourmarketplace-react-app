@@ -10,7 +10,7 @@ module.exports = {
         rules: [{
             loader: 'babel-loader',
             test: /\.js$/,
-            exclude: /node_modules/
+            exclude: [/node_modules/]
         }, {
             test: /\.s?css$/,
             use: [
@@ -18,7 +18,11 @@ module.exports = {
                 'css-loader',
                 'sass-loader'
             ]
-        }]
+        }, {
+            test: /.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
+            loader: 'url-loader?limit=10000',
+        },
+     ]
     },
     devtool: 'cheap-module-eval-source-map',
     devServer: {
